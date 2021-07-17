@@ -1,15 +1,20 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 
 @Component({
-  selector: 'app-vote',
-  templateUrl: './vote.component.html',
-  styleUrls: ['./vote.component.css']
+  selector: "app-vote",
+  templateUrl: "./vote.component.html",
+  styleUrls: ["./vote.component.css"],
 })
 export class VoteComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
+  downVote: number = 0;
+  upVote: number = 0;
+  likes() {
+    this.upVote++;
   }
+  dislikes() {
+    this.downVote++;
+  }
+  constructor() {}
 
+  ngOnInit(): void {}
 }

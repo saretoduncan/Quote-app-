@@ -1,6 +1,14 @@
-<div>
-  <button><i class="fa fa-thumbs-up" aria-hidden="true"></i></button>
-  <span></span>
-  <button><i class="fa fa-thumbs-down" aria-hidden="true"></i></button>
+<div class="d-flex">
+  <div>
+    <button (click)="likes()">
+      <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+    </button>
+    <span>{{upVote}} </span>
+  </div>
+  <div>
+    <button (click)="dislikes()">
+      <i class="fa fa-thumbs-down" aria-hidden="true"></i>
+    </button>
+    <span>{{downVote}}</span>
+  </div>
 </div>
-<div></div>
