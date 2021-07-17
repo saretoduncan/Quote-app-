@@ -1,13 +1,27 @@
 <div>
-  <form class="form" (ngSubmit)="submitQuote()" #form="ngForm">
+  <form class="form" (ngSubmit)="submitQuote(form,form.value)" #form="ngForm">
     <div class="mb-3">
       <label for="exampleFormControlInput1" class="form-label">Name</label>
-      <input type="text" class="form-control" id="exampleFormControlInput1" [(ngModel)]="newQuote.userName" name="userName" #name="ngModel" placeholder="Your Name....." />
+      <input type="text" class="form-control" id="exampleFormControlInput1" ngModel name="userName" #name="ngModel" placeholder="Your Name....." required />
+      <div *ngIf="name.errors?.required" ngClass="text-danger">
+        Name is required.
+      </div>
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlTextarea1" class="form-label">Author</label>
+      <input type="text" class="form-control" id="exampleFormControlInput1" ngModel name="author" #author="ngModel" placeholder="Author's name...." required />
+      <div *ngIf="author.errors?.required" ngClass="text-danger">
+        authors name is required.
+      </div>
     </div>
     <div class="mb-3">
       <label for="exampleFormControlTextarea1" class="form-label">Qoute</label>
-      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" [(ngModel)]="newQuote.quote" name="qoute" placeholder="Your Qoute.."></textarea>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" ngModel #quote="ngModel" name="qoute" placeholder="Your Qoute.." required></textarea>
+      <div *ngIf="quote.errors?.required" ngClass="text-danger">
+        Quote is required.
+      </div>
     </div>
+
     <div class="example-button">
       <button mat-button color="warn">Add Quote</button>
     </div>
