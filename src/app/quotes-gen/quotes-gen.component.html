@@ -7,5 +7,8 @@
       <i class="fa fa-quote-right"></i>
     </p>
   </div>
-  <app-quote-details [Qoute]="Quote" (deleted)="del($event,i)"></app-quote-details>
+  <div>
+    <button (click)="showDetails(i)">more details</button>
+  </div>
+  <app-quote-details *ngIf="Quote.showDetails" [Qoute]="Quote" (deleted)="del($event,i)"></app-quote-details>
 </div>

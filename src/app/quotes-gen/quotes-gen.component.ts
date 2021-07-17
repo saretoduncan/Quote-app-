@@ -29,4 +29,8 @@ export class QuotesGenComponent implements OnInit {
       if (confirmDelete) this.quoteGenerator.splice(index, 1);
     }
   }
+  showDetails(index: number) {
+    this.quoteGenerator[index].showDetails = !this.quoteGenerator[index]
+      .showDetails;
+  }
 }
