@@ -1,1 +1,13 @@
-<p>quotes-gen works!</p>
+<div *ngFor="let Quote of quoteGenerator">
+  <h1>Quotee</h1>
+  <div>
+    <p>
+      <i class="fa fa-quote-left"></i>{{Quote.quote}}
+      <i class="fa fa-quote-right"></i>
+    </p>
+  </div>
+  <div>
+    <button><i class="fa fa-thumbs-up" aria-hidden="true"></i></button>
+    <button><i class="fa fa-thumbs-down" aria-hidden="true"></i></button>
+  </div>
+</div>
