@@ -7,7 +7,6 @@ import { ModelClass } from "../custom-class/model-class";
   styleUrls: ["./form.component.css"],
 })
 export class FormComponent implements OnInit {
-  @Input() qoute: any;
   @Output() addQuote = new EventEmitter<ModelClass>();
   newQuote = new ModelClass("", "");
   submitQuote() {

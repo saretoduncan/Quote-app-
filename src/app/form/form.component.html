@@ -2,11 +2,11 @@
   <form class="form" (ngSubmit)="submitQuote()" #form="ngForm">
     <div class="mb-3">
       <label for="exampleFormControlInput1" class="form-label">Name</label>
-      <input type="text" class="form-control" id="exampleFormControlInput1" [(ngModel)]="qoute.name" name="name" #name="ngModel" placeholder="Your Name....." />
+      <input type="text" class="form-control" id="exampleFormControlInput1" [(ngModel)]="newQuote.userName" name="userName" #name="ngModel" placeholder="Your Name....." />
     </div>
     <div class="mb-3">
       <label for="exampleFormControlTextarea1" class="form-label">Qoute</label>
-      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" [(ngModel)]="qoute.qoute" name="qoute" placeholder="Your Qoute.."></textarea>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" [(ngModel)]="newQuote.quote" name="qoute" placeholder="Your Qoute.."></textarea>
     </div>
     <div class="example-button">
       <button mat-button color="warn">Add Quote</button>

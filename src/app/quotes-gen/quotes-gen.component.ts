@@ -11,4 +11,7 @@ export class QuotesGenComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
+  addNewQuote(qoutee: any) {
+    this.quoteGenerator.push(qoutee);
+  }
 }
