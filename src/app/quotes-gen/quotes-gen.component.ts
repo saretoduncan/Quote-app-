@@ -22,8 +22,11 @@ export class QuotesGenComponent implements OnInit {
 
     this.quoteGenerator.push(this.newQ);
   }
-  del(index: number) {
-    let confirmDelete = confirm("Are you sure you want to delete this quote");
-    if (confirmDelete) this.quoteGenerator.splice(index, 1);
+
+  del(isDelete: boolean, index: number) {
+    if (isDelete) {
+      let confirmDelete = confirm("Are you sure you want to delete this quote");
+      if (confirmDelete) this.quoteGenerator.splice(index, 1);
+    }
   }
 }

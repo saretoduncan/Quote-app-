@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, Output, EventEmitter } from "@angular/core";
 
 @Component({
   selector: "app-vote",
@@ -14,6 +14,7 @@ export class VoteComponent implements OnInit {
   dislikes() {
     this.downVote++;
   }
+
   constructor() {}
 
   ngOnInit(): void {}
