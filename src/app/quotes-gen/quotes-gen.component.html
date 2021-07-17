@@ -9,12 +9,7 @@
     <p>author: {{Quote.author}}</p>
     <p>Submitted by {{Quote.userName}}</p>
   </div>
-  <div>
-    <button><i class="fa fa-thumbs-up" aria-hidden="true"></i></button>
-    <span></span>
-    <button><i class="fa fa-thumbs-down" aria-hidden="true"></i></button>
-  </div>
-  <div>
-    <button (click)="del(i)">delete</button>
-  </div>
+  <app-vote></app-vote>
+
+  <button (click)="del(i)">delete</button>
 </div>
