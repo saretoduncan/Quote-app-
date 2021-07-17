@@ -1,5 +1,5 @@
 <app-form (addQuote)="addNewQuote($event)"></app-form>
-<div *ngFor="let Quote of quoteGenerator">
+<div *ngFor="let Quote of quoteGenerator;let i=index">
   <h1>Quotee</h1>
   <div>
     <p>
@@ -11,6 +11,10 @@
   </div>
   <div>
     <button><i class="fa fa-thumbs-up" aria-hidden="true"></i></button>
+    <span></span>
     <button><i class="fa fa-thumbs-down" aria-hidden="true"></i></button>
+  </div>
+  <div>
+    <button (click)="del(i)">delete</button>
   </div>
 </div>

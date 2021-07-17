@@ -8,9 +8,10 @@ import { FormComponent } from "./form/form.component";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { MatInputModule } from "@angular/material/input";
 import { FormsModule } from "@angular/forms";
+import { VoteComponent } from './vote/vote.component';
 
 @NgModule({
-  declarations: [AppComponent, QuotesGenComponent, FormComponent],
+  declarations: [AppComponent, QuotesGenComponent, FormComponent, VoteComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

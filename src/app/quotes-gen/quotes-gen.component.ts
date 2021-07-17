@@ -22,4 +22,7 @@ export class QuotesGenComponent implements OnInit {
 
     this.quoteGenerator.push(this.newQ);
   }
+  del(index: number) {
+    this.quoteGenerator.splice(index, 1);
+  }
 }
