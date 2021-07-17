@@ -9,9 +9,10 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { MatInputModule } from "@angular/material/input";
 import { FormsModule } from "@angular/forms";
 import { VoteComponent } from './vote/vote.component';
+import { QuoteDetailsComponent } from './quote-details/quote-details.component';
 
 @NgModule({
-  declarations: [AppComponent, QuotesGenComponent, FormComponent, VoteComponent],
+  declarations: [AppComponent, QuotesGenComponent, FormComponent, VoteComponent, QuoteDetailsComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
