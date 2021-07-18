@@ -22,13 +22,11 @@ export class QuotesGenComponent implements OnInit {
   clos(isFalse: boolean) {
     this.showForms = isFalse;
   }
-  newQ = new ModelClass("", "", "", new Date());
-  addNewQuote(qoutee: any) {
-    this.newQ.userName = qoutee.userName;
-    this.newQ.quote = qoutee.qoute;
-    this.newQ.author = qoutee.author;
 
-    this.quoteGenerator.push(this.newQ);
+  addNewQuote(qoutee: any) {
+    this.quoteGenerator.push(
+      new ModelClass(qoutee.userName, qoutee.qoute, qoutee.author, new Date())
+    );
   }
 
   del(isDelete: boolean, index: number) {
