@@ -1,4 +1,5 @@
-<app-form (addQuote)="addNewQuote($event)"></app-form>
+<button (click)="formToggle()" class="btn btn-primary">New Quote</button>
+<app-form *ngIf="showForms" (quoteCL)="clos($event)" (addQuote)="addNewQuote($event)"></app-form>
 <div *ngFor="let Quote of quoteGenerator;let i=index">
   <h1>Quotee</h1>
   <div>

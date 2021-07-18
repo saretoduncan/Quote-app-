@@ -11,9 +11,17 @@ export class QuotesGenComponent implements OnInit {
   quoteGenerator: ModelClass[] = [
     new ModelClass("duncan", "never give up", "sareto", new Date()),
   ];
+
   constructor() {}
 
   ngOnInit(): void {}
+  showForms: boolean = false;
+  formToggle() {
+    this.showForms = true;
+  }
+  clos(isFalse: boolean) {
+    this.showForms = isFalse;
+  }
   newQ = new ModelClass("", "", "", new Date());
   addNewQuote(qoutee: any) {
     this.newQ.userName = qoutee.userName;

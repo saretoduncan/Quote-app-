@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, EventEmitter } from "@angular/core";
+import { Component, OnInit, Output, Input, EventEmitter } from "@angular/core";
 import { NgForm } from "@angular/forms";
 import { ModelClass } from "../custom-class/model-class";
 
@@ -9,7 +9,10 @@ import { ModelClass } from "../custom-class/model-class";
 })
 export class FormComponent implements OnInit {
   @Output() addQuote = new EventEmitter<any>();
-
+  @Output() quoteCL = new EventEmitter<boolean>();
+  close(isFalse: boolean) {
+    this.quoteCL.emit(isFalse);
+  }
   submitQuote(form: NgForm, formValue: any) {
     if (
       formValue.userName != "" &&

@@ -1,4 +1,5 @@
 export class ModelClass {
+  showForms: boolean = false;
   showDetails: boolean;
   constructor(
     public userName: string,
