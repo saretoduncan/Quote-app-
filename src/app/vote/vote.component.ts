@@ -6,6 +6,10 @@ import { Component, OnInit, Output, EventEmitter } from "@angular/core";
   styleUrls: ["./vote.component.css"],
 })
 export class VoteComponent implements OnInit {
+  @Output() deleted = new EventEmitter();
+  delete(dl: boolean): void {
+    this.deleted.emit(dl);
+  }
   downVote: number = 0;
   upVote: number = 0;
   likes() {

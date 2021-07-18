@@ -9,7 +9,24 @@ import { ModelClass } from "../custom-class/model-class";
 })
 export class QuotesGenComponent implements OnInit {
   quoteGenerator: ModelClass[] = [
-    new ModelClass("duncan", "never give up", "sareto", new Date()),
+    new ModelClass(
+      "duncan",
+      "never give up",
+      "sareto",
+      new Date(2016, 3, 16, 12, 49, 10)
+    ),
+    new ModelClass(
+      "duncan",
+      "The Best Way To Get Started Is To Quit Talking And Begin Doing.",
+      "Walt Disney",
+      new Date()
+    ),
+    new ModelClass(
+      "Duncan",
+      "Don’t Let Yesterday Take Up Too Much Of Today.",
+      "Ja Loka",
+      new Date()
+    ),
   ];
 
   constructor() {}

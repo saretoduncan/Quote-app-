@@ -8,10 +8,6 @@ import { Component, Input, EventEmitter, OnInit, Output } from "@angular/core";
 export class QuoteDetailsComponent implements OnInit {
   @Input() Qoute: any;
 
-  @Output() deleted = new EventEmitter();
-  delete(dl: boolean): void {
-    this.deleted.emit(dl);
-  }
   constructor() {}
 
   ngOnInit(): void {}

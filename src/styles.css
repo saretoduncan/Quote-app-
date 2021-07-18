@@ -7,6 +7,7 @@
 body {
   font-family: "Source Serif Pro", serif;
   background-image: url("https://wallpaperaccess.com/full/432480.jpg");
+  box-shadow: inset 0 0 0 50vw rgba(0, 0, 0, 0.534);
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
