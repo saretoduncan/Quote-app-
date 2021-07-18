@@ -9,12 +9,12 @@ import { ModelClass } from "../custom-class/model-class";
 })
 export class QuotesGenComponent implements OnInit {
   quoteGenerator: ModelClass[] = [
-    new ModelClass("duncan", "never give up", "sareto"),
+    new ModelClass("duncan", "never give up", "sareto", new Date()),
   ];
   constructor() {}
 
   ngOnInit(): void {}
-  newQ = new ModelClass("", "", "");
+  newQ = new ModelClass("", "", "", new Date());
   addNewQuote(qoutee: any) {
     this.newQ.userName = qoutee.userName;
     this.newQ.quote = qoutee.qoute;

@@ -8,7 +8,9 @@
     </p>
   </div>
   <div>
-    <button (click)="showDetails(i)">more details</button>
+    <button class="btn btn-outline-info" (click)="showDetails(i)">
+      more details
+    </button>
   </div>
   <app-quote-details *ngIf="Quote.showDetails" [Qoute]="Quote" (deleted)="del($event,i)"></app-quote-details>
 </div>

@@ -1,6 +1,9 @@
 <p>author: {{Qoute.author}}</p>
 <p>Submitted by {{Qoute.userName}}</p>
 <app-vote></app-vote>
+<p>{{ Qoute.date|timerCounter}}</p>
 <div>
-  <button (click)="delete(true)">delete</button>
+  <button class="btn btn-danger" (click)="delete(true)">
+    <i class="fa fa-trash" aria-hidden="true"></i>
+  </button>
 </div>
