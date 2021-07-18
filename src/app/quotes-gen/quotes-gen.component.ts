@@ -44,6 +44,7 @@ export class QuotesGenComponent implements OnInit {
     this.quoteGenerator.push(
       new ModelClass(qoutee.userName, qoutee.qoute, qoutee.author, new Date())
     );
+    this.showForms = false;
   }
 
   del(isDelete: boolean, index: number) {
