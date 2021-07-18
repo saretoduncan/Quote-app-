@@ -9,6 +9,7 @@ import { ModelClass } from "../custom-class/model-class";
 })
 export class QuotesGenComponent implements OnInit {
   quoteGenerator: ModelClass[] = [
+    //generate new quote
     new ModelClass(
       "duncan",
       "never give up",
@@ -34,26 +35,31 @@ export class QuotesGenComponent implements OnInit {
   ngOnInit(): void {}
   showForms: boolean = false;
   formToggle() {
+    // show form function
     this.showForms = true;
   }
   clos(isFalse: boolean) {
+    //close form function
     this.showForms = isFalse;
   }
 
   addNewQuote(qoutee: any) {
     this.quoteGenerator.push(
+      //generate new quote function
       new ModelClass(qoutee.userName, qoutee.qoute, qoutee.author, new Date())
     );
     this.showForms = false;
   }
 
   del(isDelete: boolean, index: number) {
+    // delete button function
     if (isDelete) {
       let confirmDelete = confirm("Are you sure you want to delete this quote");
       if (confirmDelete) this.quoteGenerator.splice(index, 1);
     }
   }
   showDetails(index: number) {
+    // show all details function
     this.quoteGenerator[index].showDetails = !this.quoteGenerator[index]
       .showDetails;
   }

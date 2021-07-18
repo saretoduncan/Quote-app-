@@ -13,10 +13,10 @@ export class VoteComponent implements OnInit {
   downVote: number = 0;
   upVote: number = 0;
   likes() {
-    this.upVote++;
+    this.upVote++; // increase upvotes
   }
   dislikes() {
-    this.downVote++;
+    this.downVote++; //increase downVotes
   }
 
   constructor() {}
