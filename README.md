@@ -1,7 +1,6 @@
 # QuoteWebApp
 
 This an application where users can create quotes and have those quotes voted on whether they are terrible or are inspirational.
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.2.
 
 ## Built With
 
@@ -65,8 +64,6 @@ Feel free to check the [issues page](./src/assets/ISSUE_TEMPLATE/feature_request
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-
-### BDD
 
 ## Show your support
 
