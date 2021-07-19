@@ -3,18 +3,26 @@
 This an application where users can create quotes and have those quotes voted on whether they are terrible or are inspirational.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.2.
 
+## Built With
+
+- HTML
+- CSS
+- Bootstrap
+- Javascript
+- Typscript
+- Angular CLI version 12.1.2
+
 ## Live Demo
 
-[Live Demo Link]()
+[Live Demo Link](https://saretoduncan.github.io/Quote-web-app/)
 
-## BDD
+## Getting Started
 
-- Objectives:
+To get a local copy, follow these simple example steps.
 
-1. Determine the prices for each pizza size.
-2. Each pizza topping should have a set value depending on the size of the pizza.
-3. Determine the cost for the crust
-4. The total cost of a pizza should constitute, the crust, topping(s) and size of the pizza.
+### Prerequisites
+
+A computer with a working and up to date web browser.
 
 ### Setup
 
@@ -28,6 +36,15 @@ $ git clone https://github.com/saretoduncan/Quote-web-app.git
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
+## BDD
+
+- Objectives:
+
+1. Create a new quote.
+2. Upvote or downvote a quote.
+3. Delete a quote.
+4. See the number of upvotes and number of downvotes for each quote.
 
 ## Author
 
