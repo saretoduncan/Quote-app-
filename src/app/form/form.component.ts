@@ -14,11 +14,7 @@ export class FormComponent implements OnInit {
     this.quoteCL.emit(isFalse);
   }
   submitQuote(form: NgForm, formValue: any) {
-    if (
-      formValue.userName != "" &&
-      formValue.qoute != "" &&
-      formValue.author != ""
-    ) {
+    if (form.valid) {
       this.addQuote.emit(formValue);
       form.reset();
     } else {
