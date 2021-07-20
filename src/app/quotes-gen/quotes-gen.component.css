@@ -19,6 +19,6 @@ h1 {
   margin: 10px 10px;
   box-shadow: 0 0 20px #ffa401;
   border-radius: 10px;
-  color: black !important;
-  background-color: rgba(167, 164, 164, 0.692);
+  color: white !important;
+  background-color: rgba(44, 44, 44, 0.692);
 }
