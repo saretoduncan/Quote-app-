@@ -8,12 +8,19 @@ import { FormComponent } from "./form/form.component";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { MatInputModule } from "@angular/material/input";
 import { FormsModule } from "@angular/forms";
-import { VoteComponent } from './vote/vote.component';
-import { QuoteDetailsComponent } from './quote-details/quote-details.component';
-import { TimerCounterPipe } from './timer-counter.pipe';
+import { VoteComponent } from "./vote/vote.component";
+import { QuoteDetailsComponent } from "./quote-details/quote-details.component";
+import { TimerCounterPipe } from "./timer-counter.pipe";
 
 @NgModule({
-  declarations: [AppComponent, QuotesGenComponent, FormComponent, VoteComponent, QuoteDetailsComponent, TimerCounterPipe],
+  declarations: [
+    AppComponent,
+    QuotesGenComponent,
+    FormComponent,
+    VoteComponent,
+    QuoteDetailsComponent,
+    TimerCounterPipe,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
