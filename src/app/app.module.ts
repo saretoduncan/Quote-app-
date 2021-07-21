@@ -11,6 +11,7 @@ import { FormsModule } from "@angular/forms";
 import { VoteComponent } from "./vote/vote.component";
 import { QuoteDetailsComponent } from "./quote-details/quote-details.component";
 import { TimerCounterPipe } from "./timer-counter.pipe";
+import { HighlightDirective } from "./highlight.directive";
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { TimerCounterPipe } from "./timer-counter.pipe";
     VoteComponent,
     QuoteDetailsComponent,
     TimerCounterPipe,
+    HighlightDirective,
   ],
   imports: [
     BrowserModule,

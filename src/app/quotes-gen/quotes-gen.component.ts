@@ -14,19 +14,25 @@ export class QuotesGenComponent implements OnInit {
       "duncan",
       "never give up",
       "sareto",
-      new Date(2021, 6, 6, 12, 49, 10)
+      new Date(2021, 6, 6, 12, 49, 10),
+      100,
+      200
     ),
     new ModelClass(
       "duncan",
       "The Best Way To Get Started Is To Quit Talking And Begin Doing.",
       "Walt Disney",
-      new Date(2021, 6, 7, 12, 49, 10)
+      new Date(2021, 6, 7, 12, 49, 10),
+      200,
+      500
     ),
     new ModelClass(
       "Duncan",
       "Don’t Let Yesterday Take Up Too Much Of Today.",
       "Ja Loka",
-      new Date(2021, 6, 8, 12, 49, 10)
+      new Date(2021, 6, 8, 12, 49, 10),
+      20,
+      30
     ),
   ];
 
@@ -46,7 +52,14 @@ export class QuotesGenComponent implements OnInit {
   addNewQuote(qoutee: any) {
     this.quoteGenerator.push(
       //generate new quote function
-      new ModelClass(qoutee.userName, qoutee.qoute, qoutee.author, new Date())
+      new ModelClass(
+        qoutee.userName,
+        qoutee.qoute,
+        qoutee.author,
+        new Date(),
+        0,
+        0
+      )
     );
     this.showForms = false;
   }

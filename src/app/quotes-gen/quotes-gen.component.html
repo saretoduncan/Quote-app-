@@ -29,7 +29,7 @@
             </p>
           </div>
           <div>
-            <app-vote (deleted)="del($event,i)"></app-vote>
+            <app-vote [vote]="Quote" (deleted)="del($event,i)"></app-vote>
           </div>
 
           <div class="d-flex justify-content-center">

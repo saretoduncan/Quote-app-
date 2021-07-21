@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, EventEmitter } from "@angular/core";
+import { Component, OnInit, Output, EventEmitter, Input } from "@angular/core";
 
 @Component({
   selector: "app-vote",
@@ -6,17 +6,17 @@ import { Component, OnInit, Output, EventEmitter } from "@angular/core";
   styleUrls: ["./vote.component.css"],
 })
 export class VoteComponent implements OnInit {
+  @Input() vote: any;
   @Output() deleted = new EventEmitter();
   delete(dl: boolean): void {
     this.deleted.emit(dl);
   }
-  downVote: number = 0;
-  upVote: number = 0;
+
   likes() {
-    this.upVote++; // increase upvotes
+    this.vote.likes++; // increase upvotes
   }
   dislikes() {
-    this.downVote++; //increase downVotes
+    this.vote.unlike++; //increase downVotes
   }
 
   constructor() {}

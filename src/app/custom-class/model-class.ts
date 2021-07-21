@@ -5,7 +5,9 @@ export class ModelClass {
     public userName: string,
     public quote: string,
     public author: string,
-    public date: Date
+    public date: Date,
+    public likes: number,
+    public unlike: number
   ) {
     this.showDetails = false;
   }
