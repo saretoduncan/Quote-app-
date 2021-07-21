@@ -20,7 +20,7 @@
             placeholder="Your Name....."
             required
           />
-          <div *ngIf="name.errors?.required" ngClass="text-danger">
+          <div [hidden]="name.valid||name.pristine" ngClass="text-danger">
             Name is required.
           </div>
         </div>
@@ -38,7 +38,7 @@
             placeholder="Author's name...."
             required
           />
-          <div *ngIf="author.errors?.required" ngClass="text-danger">
+          <div [hidden]="author.valid||author.pristine" ngClass="text-danger">
             authors name is required.
           </div>
         </div>
@@ -56,7 +56,7 @@
             placeholder="Your Qoute.."
             required
           ></textarea>
-          <div *ngIf="quote.errors?.required" ngClass="text-danger">
+          <div [hidden]="quote.valid||quote.pristine" ngClass="text-danger">
             Quote is required.
           </div>
         </div>
